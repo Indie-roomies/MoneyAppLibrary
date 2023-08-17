@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Components;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,9 @@ namespace MoneyAppLib.Components
 {
     public partial class Taxes
     {
+        [Parameter]
 
+        public string? Nombre { get; set; }
 
     }
 }
