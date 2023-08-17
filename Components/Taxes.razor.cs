@@ -9,9 +9,7 @@ namespace MoneyAppLib.Components
 {
     public partial class Taxes
     {
-        [Parameter]
 
-        public string? Nombre { get; set; }
 
     }
 }
