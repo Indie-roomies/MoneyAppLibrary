@@ -1,7 +1,8 @@
 ﻿@namespace MoneyAppLib.Components
 
-<div>
-    <p>@NameExpense</p>
-    <p>@Id</p>
-    <p>@Value</p>
+<div class="tax-card">
+    <div class="title">@NameExpense</div>
+    <div class="value">@Value</div>
+
+    <button @onclick="Plus">Press me</button>
 </div>

@@ -20,10 +20,13 @@ namespace MoneyAppLib.Components
         public decimal Value { get; set; }
 
         [Parameter]
+        public EventCallback<int> OnClickEventCount { get; set; }
 
-        public object? ModelTax { get; set; }
-
-        
+        public async Task Plus()
+        {
+            await OnClickEventCount.InvokeAsync(500);
+        }
+     
         
     }
 }
