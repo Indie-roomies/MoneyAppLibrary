@@ -1,12 +1,20 @@
 ﻿@if(IsOpen)
 {
-    @if (DomContent = null)
+    @if (DomContent is null)
     {
-        <div>
-            <p>This is a modal</p>
+        <div class="modal-backdrop">
+            <div class="modal-content">
+                <p>This is a modal</p>
+            </div>
         </div>
     }
-    DomContent
+
+    // Rendenring render fragment
+    <div class="modal-container">
+        <div class="modal">
+            @DomContent
+        </div>
+    </div>
 }
 
 
